@@ -230,9 +230,46 @@ function update3() {
 }
 
 function svar() {
-  document.getElementById("svar").innerHTML = "Binary representation: " + rep; //
+  document.getElementById("svar").innerHTML = "Binary representation: " + rep;
   console.log(rep);
 }
+
+const convertBinary = [128, 64, 32, 16, 8, 4, 2, 1];
+let bi2ip = binært;
+function bin() {
+  bi2ip = binært;
+  console.log(bi2ip);
+  if (bi2ip >= 10) {
+    bi2ip += 128;
+  }
+  if (bi2ip >= 1) {
+    bi2ip += 64;
+  }
+  if (bi2ip >= 1) {
+    bi2ip += 32;
+  }
+  if (bi2ip >= 1) {
+    bi2ip += 16;
+  }
+  if (bi2ip >= 1) {
+    bi2ip += 8;
+  }
+  if (bi2ip >= 1) {
+    bi2ip += 4;
+  }
+  if (bi2ip >= 1) {
+    bi2ip += 2;
+  }
+  if (bi2ip >= 1);
+  {
+    bi2ip = 1;
+  }
+
+  document.getElementById("svar1").innerHTML = "Ip Adresse: " + bi2ip;
+}
+
+//for (let i = 0; i < convertBinary.length; i++) {}
+
 //for (let i = 0; i < 8; i++) {
 //console.log(2 ** i);
 //}
